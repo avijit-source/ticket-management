@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket Clone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <!-- toolbox -->
+    <div class="toolbox-container">
+        <div class="toolbox-priority-container">
+            <div class="peach color"></div>
+            <div class="blue color"></div>
+            <div class="green color"></div>
+            <div class="dark color"></div>
+        </div>
+        <div class="action-btn-container">
+            <div class="add-btn">
+                <i class="fa-solid fa-plus"></i>
+            </div>
+            <div class="remove-btn">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+        </div>
+    </div>
+    
+    <!-- main body -->
+
+    <div class="main">
+        <div class="ticket-container">
+            <div class="ticket-color ${ticketColor}"></div>
+            <div class="ticket-id">#sample</div>
+            <div class="task-area">
+            sample text
+           </div>
+           <div class="ticket-lock">
+            <i class="fa-solid fa-lock"></i>
+           </div>
+        </div>
+
+    </div>
+    <div class="modal-container">
+        <textarea class="textarea-container" placeholder="enter text"
+         spellcheck="false"></textarea>
+         <div class="priority-colors-container">
+            <div class="peach priority-color"></div>
+            <div class="blue priority-color"></div>
+            <div class="green priority-color"></div>
+            <div class="dark priority-color border"></div>
+         </div>
+    </div>
+
+    <script src="https://unpkg.com/shortid-dist@1.0.5/dist/shortid-2.2.13.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
